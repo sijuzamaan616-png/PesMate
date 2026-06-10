@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PESMate</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>PESMate</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header>
 <h1>PESMate</h1>
 <p>Find real opponents instantly.</p>
+</header>
 
-<button id="loginBtn">
+<div class="container">
+
+<div class="card">
+<button onclick="login()">
 Login with Google
 </button>
+</div>
+
+<div class="card hidden" id="home">
+
+<h2>Welcome Player</h2>
+
+<label>City</label>
+<select>
+<option>Kozhikode</option>
+<option>Kochi</option>
+<option>Malappuram</option>
+<option>Kannur</option>
+</select>
+
+<label>Game</label>
+<select>
+<option>eFootball Mobile</option>
+<option>eFootball Console</option>
+</select>
+
+<button onclick="findOpponent()">
+Find Opponent
+</button>
+
+</div>
+
+<div class="card hidden" id="result">
+<h2>Opponent Found!</h2>
+
+<p>Name: PESKing</p>
+<p>City: Kozhikode</p>
+<p>Status: Online</p>
+
+<button>Challenge</button>
+
+</div>
+
+</div>
 
 <script src="app.js"></script>
 
