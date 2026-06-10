@@ -4,7 +4,12 @@ padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
 }
-
+<div class="bottom-nav">
+<a href="#">🏠 Home</a>
+<a href="#">💬 Chat</a>
+<a href="#">🏆 Rank</a>
+<a href="#">👤 Profile</a>
+</div>
 body{
 background:#08111f;
 color:#fff;
